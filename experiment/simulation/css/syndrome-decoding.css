@@ -1,0 +1,30 @@
+.bit {
+    height: 2em;
+    width: 4em;
+    padding-left: 1em;
+    border: solid black;
+    border-radius: 0.5em;
+    background-color: #fff;
+    font-size: 1em;
+    color: blue;
+}
+
+.bit2 {
+    height: 2em;
+    width: 6em;
+    padding-left: 0.7em;
+    border: solid black;
+    border-radius: 0.5em;
+    background-color: #fff;
+    font-size: 1em;
+    color: blue;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+

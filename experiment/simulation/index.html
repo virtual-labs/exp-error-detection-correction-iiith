@@ -1,13 +1,316 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/standard-array-construction.css">
+	<link rel="stylesheet" href="./css/main.css">
+
+	<title>
+		Standard Array Table
+	</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li class="is-active" id="Task1">
+							<a>
+								Standard Array Construction
+							</a>
+						</li>
+
+						<li id="Task2" onclick="window.location.href = 'standard-array-decoding.html';">
+							<a>
+								Standard Array Decoding
+							</a>
+						</li>
+						
+						<li id="Task3" onclick="window.location.href = 'syndrome-decoding.html';">
+							<a>
+								Syndrome Decoding
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+							<b>Quick theory overview:</b>
+
+							<li>
+								For a non-linear block code, \(M\) is the total number of codewords and the rate is
+								R = \(\frac{log_2 M}{n}\).
+
+							</li>
+						</ul>
+
+						<br>
+
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+							<li>
+								Enter the values in the fields and click on <b>Submit</b>.
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="columns is-centered">
+		<div class="column is-11-desktop is-12-tablet is-12-mobile">
+			<div class="v-datalist-container">
+				<br>
+				<br>
+				Enter the coset leaders in the given fields in order to complete the standard array table.
+				<br>
+				<br>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+	<section id="example1">
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<div class="scroll-box">
+						<table>
+							<form action="" method="get" id="form1" onsubmit="return false">
+								<tr>
+									<th>00000</th>
+									<th>10101</th>
+									<th>11000</th>
+									<th>00111</th>
+									<th>01101</th>
+									<th>10010</th>
+									<th>01010</th>
+									<th>11111</th>
+								</tr>
+								<tr>
+									<td>
+										<label for="m1"> </label>
+										<input type="number" class="bit" id="m1">
+									</td>
+									<td> <span id="t11"> </span> </td>
+									<td> <span id="t12"> </span> </td>
+									<td> <span id="t13"> </span> </td>
+									<td> <span id="t14"> </span> </td>
+									<td> <span id="t15"> </span> </td>
+									<td> <span id="t16"> </span> </td>
+									<td> <span id="t17"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="m2"> </label>
+										<input type="number" class="bit" id="m2">
+									</td>
+									<td> <span id="t21"> </span> </td>
+									<td> <span id="t22"> </span> </td>
+									<td> <span id="t23"> </span> </td>
+									<td> <span id="t24"> </span> </td>
+									<td> <span id="t25"> </span> </td>
+									<td> <span id="t26"> </span> </td>
+									<td> <span id="t27"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+
+										<label for="m3"> </label>
+										<input type="number" class="bit" id="m3">
+									</td>
+									<td> <span id="t31"> </span> </td>
+									<td> <span id="t32"> </span> </td>
+									<td> <span id="t33"> </span> </td>
+									<td> <span id="t34"> </span> </td>
+									<td> <span id="t35"> </span> </td>
+									<td> <span id="t36"> </span> </td>
+									<td> <span id="t37"> </span> </td>
+								</tr>
+							</form>
+						</table>
+
+					</div>
+					<br>
+					<button class="v-button" role="button" onClick="check1()"> Submit </button>
+					<button class="v-button" role="button" onClick="page2()"> Next </button>
+
+
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations1">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="example2" style="display:none;">
+		<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+			style="margin-top:-1.5%">
+			<div class="column is-8-desktop is-12-tablet is-12-mobile">
+				<div class="box-question">
+
+					<div class="scroll-box">
+						<table>
+							<form action="" method="get" id="form2" onsubmit="return false">
+								<tr>
+									<th>000000</th>
+									<th>011100</th>
+									<th>101010</th>
+									<th>110001</th>
+									<th>110110</th>
+									<th>101101</th>
+									<th>011011</th>
+									<th>000111</th>
+								</tr>
+								<tr>
+									<td>
+										<label for="r1"> </label>
+										<input type="number" class="bit2" id="r1">
+									</td>
+									<td> <span id="mat11"> </span> </td>
+									<td> <span id="mat12"> </span> </td>
+									<td> <span id="mat13"> </span> </td>
+									<td> <span id="mat14"> </span> </td>
+									<td> <span id="mat15"> </span> </td>
+									<td> <span id="mat16"> </span> </td>
+									<td> <span id="mat17"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r2"> </label>
+										<input type="number" class="bit2" id="r2">
+									</td>
+									<td> <span id="mat21"> </span> </td>
+									<td> <span id="mat22"> </span> </td>
+									<td> <span id="mat23"> </span> </td>
+									<td> <span id="mat24"> </span> </td>
+									<td> <span id="mat25"> </span> </td>
+									<td> <span id="mat26"> </span> </td>
+									<td> <span id="mat27"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r3"> </label>
+										<input type="number" class="bit2" id="r3">
+									</td>
+									<td> <span id="mat31"> </span> </td>
+									<td> <span id="mat32"> </span> </td>
+									<td> <span id="mat33"> </span> </td>
+									<td> <span id="mat34"> </span> </td>
+									<td> <span id="mat35"> </span> </td>
+									<td> <span id="mat36"> </span> </td>
+									<td> <span id="mat37"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r4"> </label>
+										<input type="number" class="bit2" id="r4">
+									</td>
+									<td> <span id="mat41"> </span> </td>
+									<td> <span id="mat42"> </span> </td>
+									<td> <span id="mat43"> </span> </td>
+									<td> <span id="mat44"> </span> </td>
+									<td> <span id="mat45"> </span> </td>
+									<td> <span id="mat46"> </span> </td>
+									<td> <span id="mat47"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r5"> </label>
+										<input type="number" class="bit2" id="r5">
+									</td>
+									<td> <span id="mat51"> </span> </td>
+									<td> <span id="mat52"> </span> </td>
+									<td> <span id="mat53"> </span> </td>
+									<td> <span id="mat54"> </span> </td>
+									<td> <span id="mat55"> </span> </td>
+									<td> <span id="mat56"> </span> </td>
+									<td> <span id="mat57"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r6"> </label>
+										<input type="number" class="bit2" id="r6">
+									</td>
+									<td> <span id="mat61"> </span> </td>
+									<td> <span id="mat62"> </span> </td>
+									<td> <span id="mat63"> </span> </td>
+									<td> <span id="mat64"> </span> </td>
+									<td> <span id="mat65"> </span> </td>
+									<td> <span id="mat66"> </span> </td>
+									<td> <span id="mat67"> </span> </td>
+								</tr>
+								<tr>
+									<td>
+										<label for="r7"> </label>
+										<input type="number" class="bit2" id="r7">
+									</td>
+									<td> <span id="mat71"> </span> </td>
+									<td> <span id="mat72"> </span> </td>
+									<td> <span id="mat73"> </span> </td>
+									<td> <span id="mat74"> </span> </td>
+									<td> <span id="mat75"> </span> </td>
+									<td> <span id="mat76"> </span> </td>
+									<td> <span id="mat77"> </span> </td>
+								</tr>
+							</form>
+						</table>
+
+					</div>
+					<br>
+					<button class="v-button" role="button" onClick="check2()"> Submit </button>
+					<button class="v-button" role="button" onClick="page1()"> Previous </button>
+				</div>
+			</div>
+
+
+			<div class="column is-3-desktop is-4-tablet is-12-mobile">
+				<div class="v-datalist-container components-list">
+					<div class="v-datalist-title">Observations</div>
+					<div id="observations2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/standard-array-construction.js"></script>
 </body>
+
+
 </html>
