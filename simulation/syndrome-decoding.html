@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" href="./css/syndrome-decoding.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+	<title>
+		Syndrome Decoding
+	</title>
+</head>
+
+<body onload="getNumber()">
+
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-one-quarter v-instruction-title">
+				Tasks
+			</div>
+			<div class="column">
+				<div class="v-tabs">
+					<ul>
+						<li id="Task1" onclick="window.location.href = 'index.html';">
+							<a>
+								Standard Array Construction
+							</a>
+						</li>
+
+						<li id="Task2" onclick="window.location.href = 'standard-array-decoding.html';">
+							<a>
+								Standard Array Decoding
+							</a>
+						</li>
+
+						<li class="is-active" id="Task3">
+							<a>
+								Syndrome Decoding
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="columns is-centered">
+			<div class="column">
+				<div class="v-collapsible-instruction-container v-instruction-container">
+					<div class="v-collapsible is-size-5">Instructions</div>
+					<div class="v-content" style="text-align: left; padding-left: 10%; padding-right: 10%;">
+						<ul style="list-style: disc;">
+							<b>Quick theory overview:</b>
+
+							<li>
+								For a non-linear block code, \(M\) is the total number of codewords and the rate is
+								R = \(\frac{log_2 M}{n}\).
+
+							</li>
+						</ul>
+
+						<br>
+
+						<ul style="list-style: disc;">
+							<b>Procedure:</b>
+							<li>
+								Enter the values in the fields and click on <b>Submit</b>.
+							</li>
+
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+
+	<div class="columns is-centered">
+		<div class="column is-11-desktop is-12-tablet is-12-mobile">
+			<div class="v-datalist-container">
+				<br>
+				<p>
+					Consider a (7, 4) linear code with the parity check matrix
+					\( H=\begin{bmatrix}
+					1 & 0 & 0 & 1 & 0 & 1 & 1 \\
+					0 & 1 & 0 & 1 & 1 & 1 & 0 \\
+					0 & 0 & 1 & 0 & 1 & 1 & 1\end{bmatrix} \).
+					Decode the received vector <span id="bitstream" style="color: blue;"> </span> by looking at the
+					given table.
+					<br>
+					<br>
+					<img src="./images/syndrome-table.png" width=300>
+				</p>
+				<br>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="columns is-centered is-flex-direction-row is-flex-wrap-wrap is-align-content-start"
+		style="margin-top:-1.5%">
+		<div class="column is-8-desktop is-12-tablet is-12-mobile">
+			<div class="box-question">
+				<form action="" method="get" id="form1" onsubmit="return false">
+					<label for="m1"> Enter the corresponding syndrome</label>
+					<input type="number" class="bit" id="m1">
+					<br>
+					<br>
+					<label for="m2"> Enter the decoded vector</label>
+					<input type="number" class="bit2" id="m2">
+
+				</form>
+				<br>
+				<button class="v-button" role="button" onClick="check()"> Submit </button>
+				<button class="v-button" role="button" onClick="getNumber()"> Next </button>
+
+
+			</div>
+		</div>
+
+
+		<div class="column is-3-desktop is-4-tablet is-12-mobile">
+			<div class="v-datalist-container components-list">
+				<div class="v-datalist-title">Observations</div>
+				<div id="observations">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/js/script.js"></script>
+	<script src="./js/syndrome-decoding.js"></script>
+</body>
+
+
+</html>
