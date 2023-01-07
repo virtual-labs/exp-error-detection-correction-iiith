@@ -36,7 +36,7 @@
 								Standard Array Decoding
 							</a>
 						</li>
-						
+
 						<li id="Task3" onclick="window.location.href = 'syndrome-decoding.html';">
 							<a>
 								Syndrome Decoding
@@ -100,7 +100,7 @@
 			<div class="column is-8-desktop is-12-tablet is-12-mobile">
 				<div class="box-question">
 
-					<div class="scroll-box">
+					<div class="scroll-box-1">
 						<table>
 							<form action="" method="get" id="form1" onsubmit="return false">
 								<tr>
@@ -113,10 +113,13 @@
 									<th>01010</th>
 									<th>11111</th>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
+										
 										<label for="m1"> </label>
 										<input type="number" class="bit" id="m1">
+										&emsp;
+										<button class="v-button" role="button" id="sub1" onClick="check1()"> Submit </button>
 									</td>
 									<td> <span id="t11"> </span> </td>
 									<td> <span id="t12"> </span> </td>
@@ -126,10 +129,12 @@
 									<td> <span id="t16"> </span> </td>
 									<td> <span id="t17"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="m2"> </label>
-										<input type="number" class="bit" id="m2">
+										<input type="number" class="bit" id="m2" disabled>
+										&emsp;
+										<button class="v-button" role="button" id="sub2" onClick="check2()" disabled> Submit </button>
 									</td>
 									<td> <span id="t21"> </span> </td>
 									<td> <span id="t22"> </span> </td>
@@ -139,11 +144,13 @@
 									<td> <span id="t26"> </span> </td>
 									<td> <span id="t27"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 
 										<label for="m3"> </label>
-										<input type="number" class="bit" id="m3">
+										<input type="number" class="bit" id="m3" disabled>
+										&emsp;
+										<button class="v-button" role="button" id="sub3" onClick="check3()" disabled> Submit </button>
 									</td>
 									<td> <span id="t31"> </span> </td>
 									<td> <span id="t32"> </span> </td>
@@ -158,7 +165,7 @@
 
 					</div>
 					<br>
-					<button class="v-button" role="button" onClick="check1()"> Submit </button>
+					<button class="v-button" role="button" onClick="clear1()"> Reset </button>
 					<button class="v-button" role="button" onClick="page2()"> Next </button>
 
 
@@ -182,7 +189,7 @@
 			<div class="column is-8-desktop is-12-tablet is-12-mobile">
 				<div class="box-question">
 
-					<div class="scroll-box">
+					<div class="scroll-box-2">
 						<table>
 							<form action="" method="get" id="form2" onsubmit="return false">
 								<tr>
@@ -195,10 +202,11 @@
 									<th>011011</th>
 									<th>000111</th>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r1"> </label>
-										<input type="number" class="bit2" id="r1">
+										<input type="number" class="bit2" id="r1">&emsp;
+										<button class="v-button" role="button" id="submit1" onClick="confirm1()"> Submit </button>
 									</td>
 									<td> <span id="mat11"> </span> </td>
 									<td> <span id="mat12"> </span> </td>
@@ -208,10 +216,11 @@
 									<td> <span id="mat16"> </span> </td>
 									<td> <span id="mat17"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r2"> </label>
-										<input type="number" class="bit2" id="r2">
+										<input type="number" class="bit2" id="r2" disabled>&emsp;
+										<button class="v-button" role="button" id="submit2" onClick="confirm2()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat21"> </span> </td>
 									<td> <span id="mat22"> </span> </td>
@@ -221,10 +230,11 @@
 									<td> <span id="mat26"> </span> </td>
 									<td> <span id="mat27"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r3"> </label>
-										<input type="number" class="bit2" id="r3">
+										<input type="number" class="bit2" id="r3" disabled>&emsp;
+										<button class="v-button" role="button" id="submit3" onClick="confirm3()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat31"> </span> </td>
 									<td> <span id="mat32"> </span> </td>
@@ -234,10 +244,11 @@
 									<td> <span id="mat36"> </span> </td>
 									<td> <span id="mat37"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r4"> </label>
-										<input type="number" class="bit2" id="r4">
+										<input type="number" class="bit2" id="r4" disabled>&emsp;
+										<button class="v-button" role="button" id="submit4" onClick="confirm4()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat41"> </span> </td>
 									<td> <span id="mat42"> </span> </td>
@@ -247,10 +258,11 @@
 									<td> <span id="mat46"> </span> </td>
 									<td> <span id="mat47"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r5"> </label>
-										<input type="number" class="bit2" id="r5">
+										<input type="number" class="bit2" id="r5" disabled>&emsp;
+										<button class="v-button" role="button" id="submit5" onClick="confirm5()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat51"> </span> </td>
 									<td> <span id="mat52"> </span> </td>
@@ -260,10 +272,11 @@
 									<td> <span id="mat56"> </span> </td>
 									<td> <span id="mat57"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r6"> </label>
-										<input type="number" class="bit2" id="r6">
+										<input type="number" class="bit2" id="r6" disabled>&emsp;
+										<button class="v-button" role="button" id="submit6" onClick="confirm6()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat61"> </span> </td>
 									<td> <span id="mat62"> </span> </td>
@@ -273,10 +286,11 @@
 									<td> <span id="mat66"> </span> </td>
 									<td> <span id="mat67"> </span> </td>
 								</tr>
-								<tr>
+								<tr height="55px">
 									<td>
 										<label for="r7"> </label>
-										<input type="number" class="bit2" id="r7">
+										<input type="number" class="bit2" id="r7" disabled>&emsp;
+										<button class="v-button" role="button" id="submit7" onClick="confirm7()" disabled> Submit </button>
 									</td>
 									<td> <span id="mat71"> </span> </td>
 									<td> <span id="mat72"> </span> </td>
@@ -291,7 +305,7 @@
 
 					</div>
 					<br>
-					<button class="v-button" role="button" onClick="check2()"> Submit </button>
+					<button class="v-button" role="button" onClick="clear2()"> Reset </button>
 					<button class="v-button" role="button" onClick="page1()"> Previous </button>
 				</div>
 			</div>
