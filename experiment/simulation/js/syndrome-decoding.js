@@ -105,9 +105,9 @@ function verify() {
 
     var given = rand.join('');
     
-    // console.log(expectedsyn);
-    // console.log(expecteddv);
-    // console.log(add(given, expecteddv));
+    console.log(expectedsyn);
+    console.log(expecteddv);
+    console.log(add(given, expecteddv));
 
     if ((syn == expectedsyn) && (dv == add(given, expecteddv))) {
         obs.innerHTML = "<b>Correct Answer!!!</b>";

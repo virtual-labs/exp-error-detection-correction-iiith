@@ -260,9 +260,13 @@ function verify1() {
 function clear1() {
     const obs1 = document.getElementById("observations1");
     const form1 = document.getElementById("form1");
+    const form2 = document.getElementById("form2");
+    const form3 = document.getElementById("form3");
 
     obs1.innerHTML = "";
     form1.reset();
+    form2.reset();
+    form3.reset();
 
     document.getElementById("m1").removeAttribute("disabled");
     document.getElementById("m2").setAttribute("disabled", true);
@@ -807,10 +811,22 @@ function confirm7() {
 
 function clear2() {
     const obs2 = document.getElementById("observations2");
-    const form2 = document.getElementById("form2");
+    const form4 = document.getElementById("form4");
+    const form5 = document.getElementById("form5");
+    const form6 = document.getElementById("form6");
+    const form7 = document.getElementById("form7");
+    const form8 = document.getElementById("form8");
+    const form9 = document.getElementById("form9");
+    const form10 = document.getElementById("form10");
 
     obs2.innerHTML = "";
-    form2.reset();
+    form4.reset();
+    form5.reset();
+    form6.reset();
+    form7.reset();
+    form8.reset();
+    form9.reset();
+    form10.reset();
 
     document.getElementById("r1").removeAttribute("disabled");
     document.getElementById("r2").setAttribute("disabled", true);
