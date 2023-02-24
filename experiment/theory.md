@@ -11,7 +11,7 @@ The theory associated with Experiment-4 is divided into two parts:
 The decoding consists of estimating the transmitted codeword corresponding to the given received vector. Standard array decoding is a method for decoding linear block codes when the noise is introduced by the binary symmetric channel (BSC) with cross-over probability $p$, denoted by BSC $(p)$. For a detailed description of standard array decoding, please refer [1] (Chapter 4, Section 3.5). We shall next briefly discuss how to construct a standard array corresponding to the given linear block code $\mathcal{C}(n,k)$ and then discuss how to decode the given received vector $\mathbf{y} \in \mathbb{F}_2^n$ using it.
 Let $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_{2^k}$ be the set of codewords of the given code $\mathcal{C}(n,k)$. A codeword is chosen randomly and transmitted over the BSC to get the received vector $\mathbf{y} \in \mathbb{F}_2^n$. Note that for the BSC$(p)$, $\mathbf{y}$ can be any vector in $\mathbb{F}_2^n$, irrespective of  the transmitted codeword. The core idea of standard array construction consists of dividing all possible $2^n$ vectors into $2^k$ disjoint subsets such that there is exactly one codeword in each subset. Thus the given vector $\mathbf{y}$ can be associated with the unique codeword that lies in the same subset as that of $\mathbf{y}$ and in standard array decoding, $\mathbf{y}$ is decoded to this codeword.  
 
-![alt text](https://github.com/Madhura25-96/Exp-4-Standard-Array/blob/main/Stanndard_array_general.png)
+![alt text](./images/Stanndard_array_general.png)
 <br /> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure&nbsp;1: A general structure of the standard array
 
@@ -35,7 +35,7 @@ Note that the set of coset leaders $\{ \mathbf{e}_2, \mathbf{e}_3, \ldots, \math
 
  **Example &nbsp; 1**&nbsp;&nbsp;  _Let {00000, 11111, 11000,01010, 10101, 00111, 01101, 10010} be the set of codewords of a linear block code of length $n=5$. Note that the dimension of this code is $k=3$. A standard array corresponding to this code is given in Table &nbsp; 1.
 It can be_ 
-![alt text](https://github.com/Madhura25-96/Exp-4-Standard-Array/blob/main/Stanndard_array_example_n_5.png)
+![alt text](./images/Stanndard_array_example_n_5.png)
 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table &nbsp;1:&nbsp; Standard array of a linear block code of length 5
 <br />
@@ -52,33 +52,23 @@ Suppose $\mathbf{v}_i$ is the transmitted codeword and $\mathbf{e}_j$ is the err
 ## 2&nbsp;&nbsp; Syndrome decoding
 
 For the given linear block code $\mathcal{C}(n,k)$ with parity check matrix $H$, the syndrome of the given vector $\mathbf{y} \in \mathbb{F}_2^n$ is defined as the vector  $\mathbf{s} \in \mathbb{F}_2^{n-k}$ given by <br />
-%
+
 $$\begin{align*}
-%  
 \mathbf{s} \coloneqq \mathbf{y}H^T.
-% 
 \end{align*}$$
-% 
+
 
 Consider the following properties of syndromes (proofs can be found in [1]): 
 
 - **Property 1:** Syndromes of the vectors that lie in the same row of the standard array are the same, i.e., for $\mathbf{y}_{1}$ and $\mathbf{y}_{2}$ that lie in the same row of the standard array we have
-% 
 $$\begin{align*}
-%
 \mathbf{y}_{1}H^T = \mathbf{y}_{2}H^T.
-%
 \end{align*}$$
-%
 - **Property 2:** Syndromes of the vectors that lie in different rows of the standard array are different, i.e., for $\mathbf{y}_{1}$ and $\mathbf{y}_{3}$ that lie in different rows of the standard array we have
 <br />
-% 
 $$\begin{align*}
-%
 \mathbf{y}_{1}H^T \neq \mathbf{y}_{3}H^T.
-%
 \end{align*}$$
-%
 <br />
 
 Properties 1 and 2 indicate that there are exactly $2^{n-k}$ distinct syndromes and these are the syndromes of the coset leaders. One this needs to only keep a track of the coset leaders and their corresponding syndrome and simplify the standard array decoding procedure as follows.
