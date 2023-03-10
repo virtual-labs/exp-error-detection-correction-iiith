@@ -21,7 +21,7 @@ For BSC$(p)$ with $p<1/2$, an optimal way of dividing these $2^n$ vectors into $
 - **First row:** Put all-zero codeword in the first row and the first column. Thus all-zero vector is the coset leader of the first row. The remaining $2^k-1$ non-zero codewords are placed in the remaining columns of the first row. Without loss of generality, let $\mathbf{v}_1$ be all-zero codeword and $\mathbf{v}_2, \mathbf{v}_3, \ldots, \mathbf{v}_{2^k}$ be the non-zero codewords. Then the first row of the standard is illustrated in Figure 1.  
 - **Rows $2$ to $2^{n-k}$**: For the $j$th row, $j = 2, 3, \ldots, 2^{n-k}$, do the following:
    <br />
-   - Identify a vector of minimum weight that has not appeared in the rows 1 to j-1. This vector is chosen as the coset leader of the 
+   - Identify a vector of minimum weight that has not appeared in the rows $1$ to $j-1$. This vector is chosen as the coset leader of the 
    $j$th row. 
    Let $\mathbf{e}_j$ denotes the coset of the $j$th row.
 
@@ -37,14 +37,14 @@ Note that the set of coset leaders $\{ \mathbf{e}_2, \mathbf{e}_3, \ldots, \math
  **Example &nbsp; 1**&nbsp;&nbsp;  _Let {00000, 11111, 11000,01010, 10101, 00111, 01101, 10010} be the set of codewords of a linear block code of length $n=5$. Note that the dimension of this code is $k=3$. A standard array corresponding to this code is given in Table 1.
 It can be_ 
 <br />
-$$\begin{center}
+
 ![alt text](./images/Stanndard_array_example_n_5.png)
-\end{center}$$
+
 
 <br />
-$$\begin{center}
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table &nbsp;1:&nbsp; Standard array of a linear block code of length 5
-\end{center}$$
+
 <br />
 <br />
 _verified that this standard array is not unique._
