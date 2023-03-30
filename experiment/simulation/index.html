@@ -57,9 +57,19 @@
 							<b>Quick theory overview:</b>
 
 							<li>
-								For a non-linear block code, \(M\) is the total number of codewords and the rate is
-								R = \(\frac{log_2 M}{n}\).
+								In standard array construction, we divide all possible 2<sup>n</sup>
+								vectors into 2<sup>k</sup> disjoint subsets such that there is exactly one codeword in
+								each subset.
+							</li>
 
+							<li>
+								For completing the j<sup>th</sup> row, identify a vector of minimum weight that has not
+								appeared in the rows 1 to j-1. That vector is chosen as the coset leader.
+							</li>
+
+							<li>
+								The remaining entries in the j<sup>th</sup> row are obtained by adding the coset leader
+								to the codeword corresponding to each column.
 							</li>
 						</ul>
 
@@ -68,10 +78,34 @@
 						<ul style="list-style: disc;">
 							<b>Procedure:</b>
 							<li>
-								Enter the values in the fields and click on <b>Submit</b>.
+								Enter the coset leader in the first field and click on <b>Submit</b>.
 							</li>
-
-
+							<li>
+								The correctness of the entered coset leader is displayed in <b>Observations</b>.
+							</li>
+							<li>
+								If the answer is correct, the corresponding row in the standard array table gets filled.
+							</li>
+							<li>
+								Proceed to the next row and repeat the same procedure for the next coset leader.
+							</li>
+							<li>
+								You can enter the coset leader in a field only if the coset leader in the previous
+								row has been entered correctly.
+							</li>
+							<li>
+								Once you have entered all the coset leaders correctly, the standard array table
+								will be complete.
+							</li>
+							<li>
+								<b>Next</b> - Displays the next example.
+							</li>
+							<li>
+								<b>Previous</b> - Displays the previous example.
+							</li>
+							<li>
+								<b>Reset</b> - Resets the standard array table.
+							</li>
 						</ul>
 					</div>
 				</div>
