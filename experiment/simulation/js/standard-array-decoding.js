@@ -37,8 +37,13 @@ function check() {
         obs.style.color = "black";
     }
 
-    else if (cl.length != 6 || dv.length != 6) {
-        obs.innerHTML = "The entered value must be of length 6."
+    else if (cl.length != 6) {
+        obs.innerHTML = "The entered coset leader must be of length 6."
+        obs.style.color = "black";
+    }
+
+    else if (dv.length != 6) {
+        obs.innerHTML = "The entered codeword must be of length 6."
         obs.style.color = "black";
     }
 
@@ -128,8 +133,6 @@ function verify() {
             obs.innerHTML = "<b>Wrong Answer :(</b>";
         }
     }
-
-
 }
 
 
