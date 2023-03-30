@@ -43,7 +43,7 @@ function check() {
     }
 
     else if (dv.length != 7) {
-        obs.innerHTML = "The entered vector must be of length 7."
+        obs.innerHTML = "The entered codeword must be of length 7."
         obs.style.color = "black";
     }
 
@@ -56,7 +56,6 @@ function check() {
         verify();
     }
 }
-
 
 
 

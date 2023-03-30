@@ -51,22 +51,22 @@ function check1() {
 
 
     if (cl1 == "") {
-        obs1.innerHTML = "<b>R1.</b> Enter the coset leader."
+        obs1.innerHTML = "Enter the coset leader."
         obs1.style.color = "black";
     }
 
     else if (cl1.length != 5) {
-        obs1.innerHTML = "<b>R1.</b> The coset leader must be of length 5."
+        obs1.innerHTML = "The coset leader must be of length 5."
         obs1.style.color = "black";
     }
 
     else if (bitcheck1 != 5) {
-        obs1.innerHTML = "<b>R1.</b> The elements in the coset leader must be either 0 or 1."
+        obs1.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs1.style.color = "black";
     }
 
     else if (cl1 == a || cl1 == b || cl1 == c || cl1 == d || cl1 == e) {
-        obs1.innerHTML = "<b>R1. Correct Answer!!!</b>";
+        obs1.innerHTML = "<b>Correct Answer!!!</b>";
         obs1.style.color = "green";
 
         document.getElementById("t11").innerHTML = add(cl1, "10101");
@@ -93,11 +93,11 @@ function check1() {
         document.getElementById("t16").innerHTML = "";
         document.getElementById("t17").innerHTML = "";
         obs1.style.color = "red";
-        if (obs1.innerHTML == "<b>R1. Wrong Answer :(</b>") {
-            obs1.innerHTML = "<b>R1. Wrong Again :(</b>";
+        if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs1.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs1.innerHTML = "<b>R1. Wrong Answer :(</b>";
+            obs1.innerHTML = "<b>Wrong Answer :(</b>";
         }
     }
 
@@ -119,25 +119,31 @@ function check2() {
 
 
     if (cl2 == "") {
-        obs1.innerHTML = "<b>R2.</b> Enter the coset leader."
+        obs1.innerHTML = "Enter the coset leader."
         obs1.style.color = "black";
     }
 
     else if (cl2.length != 5) {
-        obs1.innerHTML = "<b>R2.</b> The coset leader must be of length 5."
+        obs1.innerHTML = "The coset leader must be of length 5."
         obs1.style.color = "black";
     }
 
     else if (bitcheck2 != 5) {
-        obs1.innerHTML = "<b>R2.</b> The elements in the coset leader must be either 0 or 1."
+        obs1.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs1.style.color = "black";
     }
 
     else if ((cl1 == a && (cl2 == b || cl2 == c || cl2 == d || cl2 == e))
         || (cl1 == b && (cl2 == a || cl2 == c || cl2 == d || cl2 == e))
         || ((cl1 == c || cl1 == d || cl1 == e) && (cl2 == a || cl2 == b))) {
-        obs1.innerHTML = "<b>R2. Correct Answer!!!</b>";
+        
         obs1.style.color = "green";
+        if (obs1.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs1.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs1.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("t21").innerHTML = add(cl2, "10101");
         document.getElementById("t22").innerHTML = add(cl2, "11000");
@@ -163,11 +169,11 @@ function check2() {
         document.getElementById("t26").innerHTML = "";
         document.getElementById("t27").innerHTML = "";
         obs1.style.color = "red";
-        if (obs1.innerHTML == "<b>R2. Wrong Answer :(</b>") {
-            obs1.innerHTML = "<b>R2. Wrong Again :(</b>";
+        if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs1.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs1.innerHTML = "<b>R2. Wrong Answer :(</b>";
+            obs1.innerHTML = "<b>Wrong Answer :(</b>";
         }
     }
 }
@@ -187,17 +193,17 @@ function check3() {
 
 
     if (cl3 == "") {
-        obs1.innerHTML = "<b>R3.</b> Enter the coset leader."
+        obs1.innerHTML = "Enter the coset leader."
         obs1.style.color = "black";
     }
 
     else if (cl3.length != 5) {
-        obs1.innerHTML = "<b>R3.</b> The coset leader must be of length 5."
+        obs1.innerHTML = "The coset leader must be of length 5."
         obs1.style.color = "black";
     }
 
     else if (bitcheck3 != 5) {
-        obs1.innerHTML = "<b>R3.</b> The elements in the coset leader must be either 0 or 1."
+        obs1.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs1.style.color = "black";
     }
 
@@ -225,7 +231,7 @@ function verify1() {
     flag1 = countArray1[1] * countArray1[4] * (countArray1[2] + countArray1[8] + countArray1[16]);
 
     if (flag1 == 1) {
-        obs1.innerHTML = "<b>R3. Correct Answer!!!</b> <br> You have successfully constructed the Standard Array Table";
+        obs1.innerHTML = "<b>Correct Answer!!!</b> <br> You have successfully constructed the Standard Array Table";
         obs1.style.color = "green";
 
         const cosetleader3 = document.getElementById("m3").value;
@@ -248,11 +254,11 @@ function verify1() {
         document.getElementById("t37").innerHTML = "";
 
         obs1.style.color = "red";
-        if (obs1.innerHTML == "<b>R3. Wrong Answer :(</b>") {
-            obs1.innerHTML = "<b>R3. Wrong Again :(</b>";
+        if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs1.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs1.innerHTML = "<b>R3. Wrong Answer :(</b>";
+            obs1.innerHTML = "<b>Wrong Answer :(</b>";
         }
     }
 }
@@ -327,25 +333,30 @@ function confirm1() {
 
 
     if (coset1 == "") {
-        obs2.innerHTML = "<b>R1.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset1.length != 6) {
-        obs2.innerHTML = "<b>R1.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag1 != 6) {
-        obs2.innerHTML = "<b>R1.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
     else if (coset1 == ans1 || coset1 == ans2 || coset1 == ans3
         || coset1 == ans4 || coset1 == ans5 || coset1 == ans6) {
 
-        obs2.innerHTML = "<b>R1. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat11").innerHTML = add(coset1, "011100");
         document.getElementById("mat12").innerHTML = add(coset1, "101010");
@@ -365,11 +376,11 @@ function confirm1() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R1. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R1. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R1. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat11").innerHTML = "";
@@ -398,25 +409,30 @@ function confirm2() {
 
 
     if (coset2 == "") {
-        obs2.innerHTML = "<b>R2.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset2.length != 6) {
-        obs2.innerHTML = "<b>R2.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag2 != 6) {
-        obs2.innerHTML = "<b>R2.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
     else if ((coset2 == ans1 || coset2 == ans2 || coset2 == ans3
         || coset2 == ans4 || coset2 == ans5 || coset2 == ans6) && (coset2 != coset1)) {
 
-        obs2.innerHTML = "<b>R2. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat21").innerHTML = add(coset2, "011100");
         document.getElementById("mat22").innerHTML = add(coset2, "101010");
@@ -436,11 +452,11 @@ function confirm2() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R2. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R2. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R2. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat21").innerHTML = "";
@@ -470,25 +486,30 @@ function confirm3() {
 
 
     if (coset3 == "") {
-        obs2.innerHTML = "<b>R3.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset3.length != 6) {
-        obs2.innerHTML = "<b>R3.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag3 != 6) {
-        obs2.innerHTML = "<b>R3.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
     else if ((coset3 == ans1 || coset3 == ans2 || coset3 == ans3
         || coset3 == ans4 || coset3 == ans5 || coset3 == ans6) && (coset3 != coset1 && coset3 != coset2)) {
 
-        obs2.innerHTML = "<b>R3. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat31").innerHTML = add(coset3, "011100");
         document.getElementById("mat32").innerHTML = add(coset3, "101010");
@@ -508,11 +529,11 @@ function confirm3() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R3. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R3. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R3. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat31").innerHTML = "";
@@ -542,17 +563,17 @@ function confirm4() {
 
 
     if (coset4 == "") {
-        obs2.innerHTML = "<b>R4.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset4.length != 6) {
-        obs2.innerHTML = "<b>R4.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag4 != 6) {
-        obs2.innerHTML = "<b>R4.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
@@ -560,8 +581,13 @@ function confirm4() {
         || coset4 == ans4 || coset4 == ans5 || coset4 == ans6) &&
         (coset4 != coset1 && coset4 != coset2 && coset4 != coset3)) {
 
-        obs2.innerHTML = "<b>R4. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat41").innerHTML = add(coset4, "011100");
         document.getElementById("mat42").innerHTML = add(coset4, "101010");
@@ -581,11 +607,11 @@ function confirm4() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R4. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R4. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R4. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat41").innerHTML = "";
@@ -617,17 +643,17 @@ function confirm5() {
 
 
     if (coset5 == "") {
-        obs2.innerHTML = "<b>R5.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset5.length != 6) {
-        obs2.innerHTML = "<b>R5.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag5 != 6) {
-        obs2.innerHTML = "<b>R5.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
@@ -635,8 +661,13 @@ function confirm5() {
         || coset5 == ans4 || coset5 == ans5 || coset5 == ans6) &&
         (coset5 != coset1 && coset5 != coset2 && coset5 != coset3 && coset5 != coset4)) {
 
-        obs2.innerHTML = "<b>R5. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat51").innerHTML = add(coset5, "011100");
         document.getElementById("mat52").innerHTML = add(coset5, "101010");
@@ -655,11 +686,11 @@ function confirm5() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R5. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R5. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R5. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat51").innerHTML = "";
@@ -692,17 +723,17 @@ function confirm6() {
 
 
     if (coset6 == "") {
-        obs2.innerHTML = "<b>R6.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset6.length != 6) {
-        obs2.innerHTML = "<b>R6.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag6 != 6) {
-        obs2.innerHTML = "<b>R6.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
@@ -710,8 +741,13 @@ function confirm6() {
         || coset6 == ans4 || coset6 == ans5 || coset6 == ans6) &&
         (coset6 != coset1 && coset6 != coset2 && coset6 != coset3 && coset6 != coset4 && coset6 != coset5)) {
 
-        obs2.innerHTML = "<b>R6. Correct Answer!!!</b>";
         obs2.style.color = "green";
+        if (obs2.innerHTML == "<b>Correct Answer!!!</b>") {
+            obs2.innerHTML = "<b>Correct Again!!!</b>";
+        }
+        else {
+            obs2.innerHTML = "<b>Correct Answer!!!</b>";
+        }
 
         document.getElementById("mat61").innerHTML = add(coset6, "011100");
         document.getElementById("mat62").innerHTML = add(coset6, "101010");
@@ -731,11 +767,11 @@ function confirm6() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R6. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R6. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R6. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat61").innerHTML = "";
@@ -762,22 +798,22 @@ function confirm7() {
     }
 
     if (coset7 == "") {
-        obs2.innerHTML = "<b>R7.</b> Enter the coset leader."
+        obs2.innerHTML = "Enter the coset leader."
         obs2.style.color = "black";
     }
 
     else if (coset7.length != 6) {
-        obs2.innerHTML = "<b>R7.</b> The coset leader must be of length 6."
+        obs2.innerHTML = "The coset leader must be of length 6."
         obs2.style.color = "black";
     }
 
     else if (bitflag7 != 6) {
-        obs2.innerHTML = "<b>R7.</b> The elements in the coset leader must be either 0 or 1."
+        obs2.innerHTML = "The elements in the coset leader must be either 0 or 1."
         obs2.style.color = "black";
     }
 
     else if (coset7 == ans7 || coset7 == ans8 || coset7 == ans9) {
-        obs2.innerHTML = "<b>R7. Correct Answer!!!</b> <br> You have successfully constructed the Standard Array Table";
+        obs2.innerHTML = "<b>Correct Answer!!!</b> <br> You have successfully constructed the Standard Array Table";
         obs2.style.color = "green";
 
         document.getElementById("mat71").innerHTML = add(coset7, "011100");
@@ -792,11 +828,11 @@ function confirm7() {
 
     else {
         obs2.style.color = "red";
-        if (obs2.innerHTML == "<b>R7. Wrong Answer :(</b>") {
-            obs2.innerHTML = "<b>R7. Wrong Again :(</b>";
+        if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
+            obs2.innerHTML = "<b>Wrong Again :(</b>";
         }
         else {
-            obs2.innerHTML = "<b>R7. Wrong Answer :(</b>";
+            obs2.innerHTML = "<b>Wrong Answer :(</b>";
         }
 
         document.getElementById("mat71").innerHTML = "";
