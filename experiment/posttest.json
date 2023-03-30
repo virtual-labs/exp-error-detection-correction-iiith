@@ -2,37 +2,58 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "<img src='./images/exp4@post1.png'></img>",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Decoded codeword is 11000.",
+        "b": "Decoded codeword is 01010.",
+        "c": "Decoded codeword is 11111.",
+        "d": "Decoded codeword is 00111."
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@post2.png'></img>",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "None of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "<img src='./images/exp4@post3.png'></img>",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Decoded codeword is 1111111",
+        "b": "Decoded codeword is 1101001",
+        "c": "Decoded codeword is 1001011",
+        "d": "Data insufficient"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@post4.png'></img>",
+      "answers": {
+        "a": "Standard array 1 is correct.",
+        "b": "Standard array 2 is correct.",
+        "c": "Standard array 3 is correct.",
+        "d": "Standard arrays 2 and 3 are correct."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@post5.png'></img>",
+      "answers": {
+        "a": "Coset leaders determine the error correction capability of the code.",
+        "b": "Coset leaders determine the error detection capability of the code.",
+        "c": "Let e4 and e5 be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of e4 should necessarily be less than or equal to the Hamming weight of e5.",
+        "d": "Let e4 and e5 be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of e5 can be equal to the Hamming weight of e4"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

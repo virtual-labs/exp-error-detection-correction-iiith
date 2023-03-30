@@ -2,37 +2,56 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "<img src='./images/exp4@pre1.png'></img>",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "wG^T",
+        "b": "wH^T",
+        "c": "Hw^T",
+        "d": "Gw^T"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@pre2.png'></img>",
+      "answers": {
+        "a": "011",
+        "b": "100",
+        "c": "101",
+        "d": "None of the above"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@pre3.png'></img>",
+      "answers": {
+        "a": "e2 = 0010 and e5 = 0001",
+        "b": "e2 = 010000 and e5 = 001101",
+        "c": "e2 = 00110 and e5 = 01000",
+        "d": "All are valid."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "<img src='./images/exp4@pre4.png'></img>",
+      "answers": {
+        "a": "y1 and y2 have the same syndrome.",
+        "b": "y1 and y2 have different syndromes.",
+        "c": "Data insufficient",
+        "d": "None of the above"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "<img src='./images/exp4@pre5.png'></img>",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
