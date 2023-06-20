@@ -35,7 +35,7 @@ Note that the set of coset leaders $\{ \mathbf{e}_2, \mathbf{e}_3, \ldots, \math
 <br />
 
  **Example &nbsp; 1**&nbsp;&nbsp;  _Let {00000, 11111, 11000,01010, 10101, 00111, 01101, 10010} be the set of codewords of a linear block code of length $n=5$. Note that the dimension of this code is $k=3$. A standard array corresponding to this code is given in Table 1.
-It can be_ 
+It can be verified that this standard array is not unique_ 
 <br />
 
 ![alt text](./images/Stanndard_array_example_n_5.png)
@@ -47,7 +47,6 @@ It can be_
 
 <br />
 <br />
-_verified that this standard array is not unique._
 
 Let us now discuss how to decode the given received vector $\mathbf{y}$ using standard array. This procedure is summarized below.
 - Locate $\mathbf{y}$ in the standard array. Suppose $\mathbf{y}$ lies in the $i$th column.
