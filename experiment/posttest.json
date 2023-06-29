@@ -1,60 +1,60 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "<img src='./images/exp4@post1.png'></img>",
-      "answers": {
-        "a": "Decoded codeword is 11000.",
-        "b": "Decoded codeword is 01010.",
-        "c": "Decoded codeword is 11111.",
-        "d": "Decoded codeword is 00111."
+    "version": 2.0,
+    "questions": [
+      {
+        "question": "1. Decode $00111$ using the following standard array. $\\\\$ <img src='./images/standard_array_example_exp4_post1.png'></img>",
+        "answers": {
+          "a": "Decoded codeword is $11000$.",
+          "b": "Decoded codeword is $01010$.",
+          "c": "Decoded codeword is $11111$.",
+          "d": "Decoded codeword is $00111$."
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp4@post2.png'></img>",
-      "answers": {
-        "a": "1",
-        "b": "2",
-        "c": "3",
-        "d": "None of the above"
+      {
+        "question": "2. Consider the following standard array. What is the error correction capability of this code? $\\\\$ <img src='./images/standard_array_example_exp4_post2.png'></img>",
+        "answers": {
+          "a": "1",
+          "b": "2",
+          "c": "3",
+          "d": "None of the above"
+        },
+        "correctAnswer": "a",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp4@post3.png'></img>",
-      "answers": {
-        "a": "Decoded codeword is 1111111",
-        "b": "Decoded codeword is 1101001",
-        "c": "Decoded codeword is 1001011",
-        "d": "Data insufficient"
+      {
+        "question": "3. Decode $1001011$ using the following syndrome table. $\\\\$ <img src='./images/standard_array_example_exp4_post3.png'></img>",
+        "answers": {
+          "a": "Decoded codeword is $1111111$",
+          "b": "Decoded codeword is $1101001$",
+          "c": "Decoded codeword is $1001011$",
+          "d": "Data insufficient"
+        },
+        "correctAnswer": "c",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp4@post4.png'></img>",
-      "answers": {
-        "a": "Standard array 1 is correct.",
-        "b": "Standard array 2 is correct.",
-        "c": "Standard array 3 is correct.",
-        "d": "Standard arrays 2 and 3 are correct."
+      {
+        "question": "4. Consider the linear block code $\\{0000, 0011, 1100, 1111 \\}$ and set of standard array tables given below. Select the correct option for standard array of this code for performing optimal decoding over the BSC$(p)$ with $p<1/2$.$\\\\$ <img src='./images/standard_array_example_exp4_post4.png'></img>",
+        "answers": {
+          "a": "Standard array 1 is correct.",
+          "b": "Standard array 2 is correct.",
+          "c": "Standard array 3 is correct.",
+          "d": "Standard arrays 2 and 3 are correct."
+        },
+        "correctAnswer": "d",
+        "difficulty": "beginner"
       },
-      "correctAnswer": "d",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "<img src='./images/exp4@post5.png'></img>",
-      "answers": {
-        "a": "Coset leaders determine the error correction capability of the code.",
-        "b": "Coset leaders determine the error detection capability of the code.",
-        "c": "Let e4 and e5 be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of e4 should necessarily be less than or equal to the Hamming weight of e5.",
-        "d": "Let e4 and e5 be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of e5 can be equal to the Hamming weight of e4"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    }
-  ]
-}
+      {
+        "question": "Choose the incorrect statement.",
+        "answers": {
+          "a": "Coset leaders determine the error correction capability of the code.",
+          "b": "Coset leaders determine the error detection capability of the code.",
+          "c": "Let $\\mathbf{e}_4$ and $\\mathbf{e}_5$ be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of $\\mathbf{e}_4$ should necessarily be less than or equal to the Hamming weight of $\\mathbf{e}_5$.",
+          "d": "Let $\\mathbf{e}_4$ and $\\mathbf{e}_5$ be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of $\\mathbf{e}_5$ can be equal to the Hamming weight of $\\mathbf{e}_4$."
+        },
+        "correctAnswer": "b",
+        "difficulty": "beginner"
+      }
+    ]
+  }
