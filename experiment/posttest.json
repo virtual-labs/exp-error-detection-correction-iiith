@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "1. Decode $00111$ using the following standard array. $\\\\$ $$<img src='./images/standard_array_example_exp4_post1.png'></img>"$$,
+        "question": "1. Decode $00111$ using the following standard array. $\\\\$ $$<img src='./images/standard_array_example_exp4_post1.png'></img>$$",
         "answers": {
           "a": "Decoded codeword is $11000$.",
           "b": "Decoded codeword is $01010$.",
@@ -46,7 +46,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "Choose the incorrect statement.",
+        "question": "5. Choose the incorrect statement.",
         "answers": {
           "a": "Coset leaders determine the error correction capability of the code.",
           "b": "Coset leaders determine the error detection capability of the code.",
