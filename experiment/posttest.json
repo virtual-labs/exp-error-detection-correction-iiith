@@ -2,7 +2,7 @@
     "version": 2.0,
     "questions": [
       {
-        "question": "1. Decode $00111$ using the following standard array. $\\\\$ $$<img src='./images/standard_array_example_exp4_post1.png'></img>$$",
+        "question": "1. Decode $00111$ using the following standard array. $\\\\$ <img src='./images/standard_array_example_exp4_post1.png'></img>",
         "answers": {
           "a": "Decoded codeword is $11000$.",
           "b": "Decoded codeword is $01010$.",
@@ -13,7 +13,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "2. Consider the following standard array. What is the error correction capability of this code? $\\\\$ $$<img src='./images/standard_array_example_exp4_post2.png'></img>$$",
+        "question": "2. Consider the following standard array. What is the error correction capability of this code? $\\\\$ <img src='./images/standard_array_example_exp4_post2.png'></img>",
         "answers": {
           "a": "1",
           "b": "2",
@@ -24,7 +24,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "3. Decode $1001011$ using the following syndrome table. $\\\\$ $$<img src='./images/standard_array_example_exp4_post3.png'></img>$$",
+        "question": "3. Decode $1001011$ using the following syndrome table. $\\\\$ <img src='./images/standard_array_example_exp4_post3.png'></img>",
         "answers": {
           "a": "Decoded codeword is $1111111$",
           "b": "Decoded codeword is $1101001$",
@@ -35,7 +35,7 @@
         "difficulty": "beginner"
       },
       {
-        "question": "4. Consider the linear block code $\\{0000, 0011, 1100, 1111 \\}$ and set of standard array tables given below. Select the correct option for standard array of this code for performing optimal decoding over the BSC$(p)$ with $p<1/2$.$\\\\$ $$<img src='./images/standard_array_example_exp4_post4.png'></img>$$",
+        "question": "4. Consider the linear block code $\\{0000, 0011, 1100, 1111 \\}$ and set of standard array tables given below. Select the correct option for standard array of this code for performing optimal decoding over the BSC$(p)$ with $p<1/2$.$\\\\$ <img src='./images/standard_array_example_exp4_post4.png'></img>",
         "answers": {
           "a": "Standard array 1 is correct.",
           "b": "Standard array 2 is correct.",
