@@ -12,9 +12,9 @@ The decoding consists of estimating the transmitted codeword corresponding to th
 <br />
 Let $\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_{2^k}$ be the set of codewords of the given code $\mathcal{C}(n,k)$. A codeword is chosen randomly and transmitted over the BSC to get the received vector $\mathbf{y} \in \mathbb{F}_2^n$. Note that for the BSC$(p)$, $\mathbf{y}$ can be any vector in $\mathbb{F}_2^n$, irrespective of  the transmitted codeword. The core idea of standard array construction consists of dividing all possible $2^n$ vectors into $2^k$ disjoint subsets such that there is exactly one codeword in each subset. Thus the given vector $\mathbf{y}$ can be associated with the unique codeword that lies in the same subset as that of $\mathbf{y}$ and in standard array decoding, $\mathbf{y}$ is decoded to this codeword.  
 
-![alt text](./images/Stanndard_array_general.png)
-<br /> 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Figure&nbsp;1: A general structure of the standard array
+| **Figure 1: A general structure of the standard array** |
+|:--:|
+| ![alt text](./images/Stanndard_array_general.png) |
 
 For BSC$(p)$ with $p<1/2$, an optimal way of dividing these $2^n$ vectors into $2^k$ disjoint subsets provides a standard array. A standard array is a table with $2^k$ columns and $2^{n-k}$ rows such that a distinct vector in $\mathbb{F}_2^n$ is placed in each entry of this table. For the given row, the vector in the first column is called as the _coset leader_ of that row.The procedure for constructing a standard array is provided below.
 
@@ -38,12 +38,13 @@ Note that the set of coset leaders $\{ \mathbf{e}_2, \mathbf{e}_3, \ldots, \math
 It can be verified that this standard array is not unique_ 
 <br />
 
-![alt text](./images/Stanndard_array_example_n_5.png)
-
-
+<!-- ![alt text](./images/Stanndard_array_example_n_5.png)
 <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table &nbsp;1:&nbsp; Standard array of a linear block code of length 5 -->
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Table &nbsp;1:&nbsp; Standard array of a linear block code of length 5
+| **Table 1: Standard array of a linear block code of length 5** |
+|:--:|
+| ![alt text](./images/Stanndard_array_example_n_5.png) |
 
 <br />
 <br />
