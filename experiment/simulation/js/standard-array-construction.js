@@ -95,9 +95,11 @@ function check1() {
         obs1.style.color = "red";
         if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
             obs1.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs1.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
     }
 
@@ -171,9 +173,11 @@ function check2() {
         obs1.style.color = "red";
         if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
             obs1.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs1.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
     }
 }
@@ -256,9 +260,11 @@ function verify1() {
         obs1.style.color = "red";
         if (obs1.innerHTML == "<b>Wrong Answer :(</b>") {
             obs1.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs1.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
     }
 }
@@ -378,9 +384,11 @@ function confirm1() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat11").innerHTML = "";
@@ -454,9 +462,11 @@ function confirm2() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat21").innerHTML = "";
@@ -531,9 +541,11 @@ function confirm3() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat31").innerHTML = "";
@@ -609,9 +621,11 @@ function confirm4() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat41").innerHTML = "";
@@ -688,9 +702,11 @@ function confirm5() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat51").innerHTML = "";
@@ -769,9 +785,11 @@ function confirm6() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat61").innerHTML = "";
@@ -830,9 +848,11 @@ function confirm7() {
         obs2.style.color = "red";
         if (obs2.innerHTML == "<b>Wrong Answer :(</b>") {
             obs2.innerHTML = "<b>Wrong Again :(</b>";
+            alert("Wrong Again :(")
         }
         else {
             obs2.innerHTML = "<b>Wrong Answer :(</b>";
+            alert("Wrong Answer :(")
         }
 
         document.getElementById("mat71").innerHTML = "";
