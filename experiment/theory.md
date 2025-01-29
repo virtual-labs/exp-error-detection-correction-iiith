@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly -->
+<html>
+  <head>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.21/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+  </head>
+
+
 # Theory
 
 The theory associated with Experiment-4 is divided into two parts:
@@ -99,3 +110,4 @@ Properties 1 and 2 indicate that there are exactly $2^{n-k}$ distinct syndromes 
 
 It can be verified that the standard array and syndrome decoding are equivalent and would decode the given $\mathbf{y}$ to the same codeword. The advantage of syndrome decoding is that storage space required is less as compared with standard array decoding. 
 
+</html>
