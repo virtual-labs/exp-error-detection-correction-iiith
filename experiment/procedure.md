@@ -1,10 +1,9 @@
-### Procedure
-
 There are three tasks in this experiment.
 <br>
 <br>
 
 **Procedure for Standard Array Construction:**
+
 1. Enter the coset leader in the first field and click on <b>Submit</b>.
 2. The correctness of the entered coset leader is displayed in <b>Observations</b>.
 3. If the answer is correct, the corresponding row in the standard array table gets filled.
@@ -13,17 +12,21 @@ There are three tasks in this experiment.
 6. <b>Next</b> - Displays the next example.
 7. <b>Previous</b> - Displays the previous example.
 8. <b>Reset</b> - Resets the standard array table.
-						
----
-**Procedure for Standard Array Decoding:**
-1. Enter the values in both the fields and click on <b>Submit</b>.
-2. The correctness of the entered answer is displayed in <b>Observations</b>.
-3. <b>Next</b> - Displays the next example. Solve sufficient number of examples.
----
-**Procedure for Syndrome Decoding:**
-1. Enter the values in both the fields and click on <b>Submit</b>.
-2. The correctness of the entered answer is displayed in <b>Observations</b>.
-3. <b>Next</b> - Displays the next example. Solve sufficient number of examples.
+
 ---
 
-							
+**Procedure for Standard Array Decoding:**
+
+1. Enter the values in both the fields and click on <b>Submit</b>.
+2. The correctness of the entered answer is displayed in <b>Observations</b>.
+3. <b>Next</b> - Displays the next example. Solve sufficient number of examples.
+
+---
+
+**Procedure for Syndrome Decoding:**
+
+1. Enter the values in both the fields and click on <b>Submit</b>.
+2. The correctness of the entered answer is displayed in <b>Observations</b>.
+3. <b>Next</b> - Displays the next example. Solve sufficient number of examples.
+
+---
