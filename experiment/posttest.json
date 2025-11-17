@@ -78,13 +78,149 @@
         "d": "Let $\\mathbf{e}_4$ and $\\mathbf{e}_5$ be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of $\\mathbf{e}_5$ can be equal to the Hamming weight of $\\mathbf{e}_4$."
       },
       "explanations": {
-        "a": "Correct! Coset leaders determine the error correction capability.",
-        "b": "Incorrect. Error detection capability is determined by the minimum distance, not coset leaders.",
-        "c": "Incorrect. There is no strict ordering required between coset leader weights.",
-        "d": "Correct! Coset leaders can have equal Hamming weights."
+        "a": "Incorrect. This is a correct statement.",
+        "b": "Correct! This is INCORRECT - error detection capability is determined by the minimum distance, not coset leaders.",
+        "c": "Incorrect. This is a correct statement about coset leader selection.",
+        "d": "Incorrect. This is a correct statement."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "6. Consider a $(7, 3)$ linear block code with parity check matrix $H$. If the syndrome of received vector $\\mathbf{y}$ is $\\mathbf{s} = [1, 0, 1, 1]$, and the coset leader with this syndrome is $\\mathbf{e} = [0, 0, 1, 0, 0, 0, 0]$, what is the decoded codeword if $\\mathbf{y} = [1, 1, 0, 1, 0, 1, 1]$?",
+      "answers": {
+        "a": "$[1, 1, 0, 1, 0, 1, 1]$",
+        "b": "$[1, 1, 1, 1, 0, 1, 1]$",
+        "c": "$[0, 0, 1, 0, 0, 0, 0]$",
+        "d": "$[0, 0, 0, 1, 0, 1, 1]$"
+      },
+      "explanations": {
+        "a": "Incorrect. The received vector needs to be corrected using the coset leader.",
+        "b": "Correct! The decoded codeword is $\\mathbf{y} + \\mathbf{e} = [1, 1, 0, 1, 0, 1, 1] + [0, 0, 1, 0, 0, 0, 0] = [1, 1, 1, 1, 0, 1, 1]$.",
+        "c": "Incorrect. This is the error pattern, not the decoded codeword.",
+        "d": "Incorrect. Check the addition operation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. For a $(15, 7)$ linear block code, how many distinct syndromes exist?",
+      "answers": {
+        "a": "7",
+        "b": "8",
+        "c": "128",
+        "d": "256"
+      },
+      "explanations": {
+        "a": "Incorrect. The number of distinct syndromes is $2^{n-k}$.",
+        "b": "Incorrect. This is $n-k$, not $2^{n-k}$.",
+        "c": "Incorrect. Check the calculation of $2^{n-k}$.",
+        "d": "Correct! The number of distinct syndromes is $2^{n-k} = 2^{15-7} = 2^8 = 256$."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "8. In a standard array for a $(6, 3)$ code, if the coset leader of row 5 is $[0, 1, 1, 0, 0, 0]$ and the codeword in column 3 is $[1, 0, 1, 1, 0, 1]$, what vector is at the intersection of row 5 and column 3?",
+      "answers": {
+        "a": "$[1, 0, 1, 1, 0, 1]$",
+        "b": "$[0, 1, 1, 0, 0, 0]$",
+        "c": "$[1, 1, 0, 1, 0, 1]$",
+        "d": "$[0, 0, 0, 1, 0, 1]$"
+      },
+      "explanations": {
+        "a": "Incorrect. The entry is the sum of coset leader and codeword.",
+        "b": "Incorrect. The entry is the sum of coset leader and codeword.",
+        "c": "Correct! The entry is $[0, 1, 1, 0, 0, 0] + [1, 0, 1, 1, 0, 1] = [1, 1, 0, 1, 0, 1]$.",
+        "d": "Incorrect. Check the addition operation."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "9. What is the relationship between the number of coset leaders and the dimension of the syndrome space?",
+      "answers": {
+        "a": "Number of coset leaders equals the dimension",
+        "b": "Number of coset leaders is $2^{\\text{dimension}}$",
+        "c": "They are unrelated",
+        "d": "Number of coset leaders is twice the dimension"
+      },
+      "explanations": {
+        "a": "Incorrect. The relationship involves an exponential.",
+        "b": "Correct! The number of coset leaders is $2^{n-k}$ where $n-k$ is the dimension of the syndrome space.",
+        "c": "Incorrect. There is a direct relationship.",
+        "d": "Incorrect. The relationship is exponential, not linear."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "10. Consider syndrome decoding for a code with parity check matrix $H$. If $\\mathbf{y}_1$ and $\\mathbf{y}_2$ are in the same coset, what is true about $\\mathbf{y}_1 - \\mathbf{y}_2$?",
+      "answers": {
+        "a": "$\\mathbf{y}_1 - \\mathbf{y}_2$ is the all-zero vector",
+        "b": "$\\mathbf{y}_1 - \\mathbf{y}_2$ is a codeword",
+        "c": "$\\mathbf{y}_1 - \\mathbf{y}_2$ is a coset leader",
+        "d": "$\\mathbf{y}_1 - \\mathbf{y}_2$ has syndrome equal to the coset leader"
+      },
+      "explanations": {
+        "a": "Incorrect. They can be different vectors in the same coset.",
+        "b": "Correct! If $\\mathbf{y}_1$ and $\\mathbf{y}_2$ are in the same coset, their difference is a codeword (over $\\mathbb{F}_2$, subtraction equals addition).",
+        "c": "Incorrect. The difference is not necessarily a coset leader.",
+        "d": "Incorrect. Codewords have zero syndrome."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "11. For a $(31, 26)$ linear block code, what is the storage requirement ratio between standard array decoding and syndrome decoding (in terms of vectors stored)?",
+      "answers": {
+        "a": "1:1",
+        "b": "$2^{26}:32$",
+        "c": "$2^{31}:2^5$",
+        "d": "$2^5:2^{31}$"
+      },
+      "explanations": {
+        "a": "Incorrect. Standard array requires much more storage.",
+        "b": "Incorrect. Check the calculation.",
+        "c": "Correct! Standard array stores all $2^{31}$ vectors, while syndrome decoding stores only $2^{n-k} = 2^5 = 32$ coset leaders.",
+        "d": "Incorrect. The ratio is inverted."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "12. In syndrome decoding, suppose the syndrome lookup table contains an error where coset leader $\\mathbf{e}_i$ with syndrome $\\mathbf{s}_i$ is replaced by $\\mathbf{e}_j$ with the same syndrome. What is the consequence?",
+      "answers": {
+        "a": "No effect on decoding",
+        "b": "Some received vectors will be decoded incorrectly",
+        "c": "The decoder will fail completely",
+        "d": "Only detection will be affected, not correction"
+      },
+      "explanations": {
+        "a": "Incorrect. The error will affect decoding.",
+        "b": "Correct! Received vectors in that coset will be decoded using the wrong error pattern, leading to incorrect decoding.",
+        "c": "Incorrect. Only vectors in that coset are affected.",
+        "d": "Incorrect. Correction will be affected."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "13. For a perfect code of length $n$, how are the coset leaders distributed by weight?",
+      "answers": {
+        "a": "All coset leaders have weight 0",
+        "b": "All coset leaders have weight $\\leq t$ where $t$ is the error correction capability",
+        "c": "Coset leaders have all possible weights from 0 to $n$",
+        "d": "All coset leaders have the same weight"
+      },
+      "explanations": {
+        "a": "Incorrect. Only the all-zero vector has weight 0.",
+        "b": "Correct! For perfect codes, all error patterns of weight $\\leq t$ are coset leaders, and there are no others.",
+        "c": "Incorrect. Weights are limited by the error correction capability.",
+        "d": "Incorrect. Coset leaders have varying weights from 0 to $t$."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
