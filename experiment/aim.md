@@ -5,3 +5,6 @@ The structure of the experiment is as follows:
 - Standard array construction
 - Standard array decoding
 - Syndrome decoding
+### Aim of the experiment
+
+
