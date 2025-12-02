@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Decode $00111$ using the following standard array. $\\\\$ <img src='./images/standard_array_example_exp4_post1.png'></img>",
+      "answers": {
+        "a": "Decoded codeword is $11000$.",
+        "b": "Decoded codeword is $01010$.",
+        "c": "Decoded codeword is $11111$.",
+        "d": "Decoded codeword is $00111$."
+      },
+      "explanations": {
+        "a": "Incorrect. $00111$ is not in the coset with leader $11000$.",
+        "b": "Incorrect. $00111$ is not in the coset with leader $01010$.",
+        "c": "Incorrect. $00111$ is not in the coset with leader $11111$.",
+        "d": "Correct! $00111$ is a codeword and is decoded as itself."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Consider the following standard array. What is the error correction capability of this code? $\\\\$ <img src='./images/standard_array_example_exp4_post2.png'></img>",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Correct! The code can correct single-bit errors.",
+        "b": "Incorrect. The code cannot correct two errors.",
+        "c": "Incorrect. The code cannot correct three errors.",
+        "d": "Incorrect. Option (a) is correct."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Decode $1001011$ using the following syndrome table. $\\\\$ <img src='./images/standard_array_example_exp4_post3.png'></img>",
+      "answers": {
+        "a": "Decoded codeword is $1111111$",
+        "b": "Decoded codeword is $1101001$",
+        "c": "Decoded codeword is $1001011$",
+        "d": "Data insufficient"
+      },
+      "explanations": {
+        "a": "Incorrect. $1001011$ does not decode to $1111111$.",
+        "b": "Incorrect. $1001011$ does not decode to $1101001$.",
+        "c": "Correct! The syndrome table shows $1001011$ is a codeword.",
+        "d": "Incorrect. Sufficient data is provided."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. Consider the linear block code $\\{0000, 0011, 1100, 1111 \\}$ and set of standard array tables given below. Select the correct option for standard array of this code for performing optimal decoding over the BSC$(p)$ with $p<1/2$.$\\\\$ <img src='./images/standard_array_example_exp4_post4.png'></img>",
+      "answers": {
+        "a": "Standard array 1 is correct.",
+        "b": "Standard array 2 is correct.",
+        "c": "Standard array 3 is correct.",
+        "d": "Standard arrays 2 and 3 are correct."
+      },
+      "explanations": {
+        "a": "Incorrect. Standard array 1 does not use minimum weight coset leaders.",
+        "b": "Incorrect. Standard array 2 alone is not sufficient.",
+        "c": "Incorrect. Standard array 3 alone is not sufficient.",
+        "d": "Correct! Both standard arrays 2 and 3 use minimum weight coset leaders."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Choose the incorrect statement.",
+      "answers": {
+        "a": "Coset leaders determine the error correction capability of the code.",
+        "b": "Coset leaders determine the error detection capability of the code.",
+        "c": "Let $\\mathbf{e}_4$ and $\\mathbf{e}_5$ be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of $\\mathbf{e}_4$ should necessarily be less than or equal to the Hamming weight of $\\mathbf{e}_5$.",
+        "d": "Let $\\mathbf{e}_4$ and $\\mathbf{e}_5$ be the coset leaders of the 4th and 5th rows of a standard array of some linear block code respectively. Then the Hamming weight of $\\mathbf{e}_5$ can be equal to the Hamming weight of $\\mathbf{e}_4$."
+      },
+      "explanations": {
+        "a": "Incorrect. This is a correct statement.",
+        "b": "Correct! This is INCORRECT - error detection capability is determined by the minimum distance, not coset leaders.",
+        "c": "Incorrect. This is a correct statement about coset leader selection.",
+        "d": "Incorrect. This is a correct statement."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
